@@ -112,7 +112,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-API_URL = 'https://jsonplaceholder.typicode.com/posts'
+API_URL = 'https://arielarias.pythonanywhere.com/demo/rest/api/index/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
