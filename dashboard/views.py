@@ -1,7 +1,9 @@
 from django.conf import settings
 import requests
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def index(request):
     api_url = "https://arielarias.pythonanywhere.com/demo/rest/api/index/"
     
