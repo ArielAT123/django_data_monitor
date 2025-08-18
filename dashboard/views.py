@@ -1,9 +1,10 @@
 from django.conf import settings
 import requests
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 
 @login_required
+@permission_required('dashboard.index_viewer', raise_exception=True)
 def index(request):
     api_url = "https://arielarias.pythonanywhere.com/demo/rest/api/index/"
     
